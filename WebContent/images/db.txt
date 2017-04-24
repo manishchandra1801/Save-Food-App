@@ -1,0 +1,88 @@
+INSERT INTO quadinfo VALUES 
+(10,"Indian"),
+(20,"Dutch"),
+(30,"Colonial"),
+(40,"State");
+
+INSERT INTO mealcourse VALUES 
+(111,"Breakfast"),
+(222,"Lunch"),
+(333,"Dinner");
+
+INSERT INTO images (Image_Path) VALUES 
+("resources/img/corn.png"),
+("resources/img/apple.png"),
+("resources/img/bread.png"),
+("resources/img/burger.png"),
+("resources/img/chicken.png"),
+("resources/img/fries.png"),
+("resources/img/lasagna.png"),
+("resources/img/oats.png"),
+("resources/img/pasta.png"),
+("resources/img/peas.png"),
+("resources/img/pizza.png"),
+("resources/img/spaghetti.png"),
+("resources/img/zitti.png"),
+("resources/img/wrap.jpg"),
+("resources/img/salad.jpg"),
+("resources/img/jerk_chicken.jpg"),
+("resources/img/hotdog.jpg"),
+("resources/img/prawn.jpg"),
+("resources/img/bacon.jpg"),
+("resources/img/quesadilla.jpg"),
+("resources/img/pork_lion.jpg"),
+("resources/img/jasmine_rice.jpg"),
+("resources/img/orzo.jpg");
+
+
+
+INSERT INTO fooditems (FoodItem_Name,Quad_ID,Relative_Amount,Relative_Serving_Plates,Image_ID,Calories,MealCourse_ID,IsSelectedInMenu) VALUES 
+("Pasta",10,1,4,9,45,111,1),
+("Pizza",10,1,4,11,75,111,1),
+("Apple",10,1,4,2,45,222,1),
+("Cheese Burger",10,1,4,4,45,111,1),
+("Ham Burger",10,1,4,4,45,333,1),
+("Fries",10,1,4,6,45,111,1),
+("Wedges",20,1,4,6,45,111,1),
+("Pork Lion",20,1,4,21,45,222,1),
+("Jerk Chicken",20,1,4,16,45,222,1),
+("Bread",20,1,4,3,45,333,1),
+("Orzo",20,1,4,23,45,222,1),
+("Jasmine Rice",20,1,4,22,45,222,1),
+("Zitti",30,1,4,13,45,333,1),
+("Corns",30,1,4,1,45,111,1),
+("Peas",30,1,4,10,45,222,1),
+("Wrap",30,1,4,14,45,333,1),
+("Oat Meal",30,1,4,8,45,333,1),
+("Prawn",30,1,4,18,45,333,1),
+("Bacon",40,1,4,19,45,333,1),
+("Wedges",40,1,4,6,45,111,1),
+("Quesdilla",40,1,4,20,45,333,1),
+("Jasmine Rice",40,1,4,22,45,222,1),
+("BBQ Chicken",40,1,4,5,45,333,1);
+
+INSERT INTO config VALUES 
+(1,"10:00", "23:59");
+
+insert into student values('nr123123', 'Navodit', 'nr123@albany.edu', 1);
+insert into managerinfo values('mr123123', 'Amit', '12208', 'suny@gmail.com', 10);
+
+
+
+
+
+Below Commands are for Demo only
+ 
+insert into quadinfo values(50,"Alumini");
+insert into fooditems values(24,"Pasta",50,1,4,9,45,111,1);
+
+delete from fooditems where fooditemid=24;
+delete from quadinfo where quad_id=50;
+
+insert into mealcourse values (444, 'Snacks');
+insert into fooditems values(25,"Pasta",40,1,4,9,45,444,1);
+
+delete from fooditems where fooditemid=25;
+delete from mealcourse where mealcourse_id=444;
+
+delete from foodselected;
