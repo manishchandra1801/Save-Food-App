@@ -30,7 +30,7 @@ import com.albany.edu.fwp.dao.ManagerInfoDAO;
 import com.opensymphony.xwork2.ActionSupport;
  
 public class AdminAction extends ActionSupport {
-private HttpServletRequest request;
+private HttpServletRequest request; 
 private String addmanagerID,searchmanagerID;
 private String addmanagerName,searchmanagerName;
 private String addmanagerEmail,searchmanagerEmail;
